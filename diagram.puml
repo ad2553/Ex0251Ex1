@@ -1,0 +1,31 @@
+@startuml
+class Bicycle {
++ void start()
++ void stop()
++ double accelerate()
+}
+
+abstract class Vehicle {
++ {abstract}void start()
++ {abstract}void stop()
++ {abstract}double accelerate()
+}
+
+class Car {
++ void start()
++ void stop()
++ double accelerate()
+}
+
+class Motorcycle {
++ void start()
++ void stop()
++ double accelerate()
+}
+
+
+
+Vehicle <|-- Bicycle
+Vehicle <|-- Car
+Vehicle <|-- Motorcycle
+@enduml
